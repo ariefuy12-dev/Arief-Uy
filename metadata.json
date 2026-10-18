@@ -1,0 +1,6 @@
+{
+  "name": "Dompetku - Pembukuan & Keuangan APK",
+  "description": "Aplikasi Pembukuan & Pengelolaan Keuangan Pribadi Dompetku siap pasang sebagai APK Android dengan mode offline dan pencatatan praktis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

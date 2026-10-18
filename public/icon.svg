@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="walletGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0fdf4"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#022c22" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle inner circle accent -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="6"/>
+
+  <!-- Wallet Body Group -->
+  <g filter="url(#shadow)">
+    <!-- Main Wallet Pocket -->
+    <rect x="96" y="148" width="320" height="236" rx="36" fill="url(#walletGrad)"/>
+    
+    <!-- Top inner fold -->
+    <path d="M 116 148 L 396 148 C 408 148, 416 156, 416 168 L 416 196 C 416 208, 408 216, 396 216 L 116 216 C 104 216, 96 208, 96 196 L 96 168 C 96 156, 104 148, 116 148 Z" fill="#ecfdf5"/>
+    
+    <!-- Cash Card protruding from top -->
+    <rect x="144" y="112" width="224" height="60" rx="16" fill="url(#goldGrad)" opacity="0.95"/>
+    <rect x="168" y="132" width="60" height="8" rx="4" fill="#ca8a04"/>
+    <circle cx="330" cy="136" r="12" fill="#ca8a04" opacity="0.7"/>
+
+    <!-- Wallet Clasp Flap -->
+    <path d="M 276 210 L 396 210 C 418 210, 428 226, 428 248 L 428 284 C 428 306, 418 322, 396 322 L 276 322 C 264 322, 254 312, 254 300 L 254 232 C 254 220, 264 210, 276 210 Z" fill="#047857"/>
+
+    <!-- Metallic snap button -->
+    <circle cx="376" cy="266" r="20" fill="url(#goldGrad)"/>
+    <circle cx="376" cy="266" r="10" fill="#a16207"/>
+  </g>
+
+  <!-- Growth Sparkle / Up Arrow Badge -->
+  <g transform="translate(140, 260)">
+    <circle cx="40" cy="40" r="32" fill="#10b981" opacity="0.15"/>
+    <path d="M 26 48 L 38 36 L 46 44 L 62 26" fill="none" stroke="#059669" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 50 26 L 62 26 L 62 38" fill="none" stroke="#059669" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
